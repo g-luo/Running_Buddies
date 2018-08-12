@@ -40,8 +40,9 @@ function saveToFB() {
        // name: "hi"
         "start": "Start Location: " + startPlace + ", " + startAddress + ", " + startCity, 
         "end": "End Location: " + endPlace + ", " + endAddress + ", " + endCity,
-        "details": "Details: " + runType + ", "+ distance, 
-        "attendees": "Attendees: " + name
+        "details": "Details: " + runType + ", "+ distance+", "+time, 
+        "attendees": "Created By: " + name,
+        "timestamp": Date.now()
     });
 }
 
@@ -53,3 +54,4 @@ function inputFocus(i){
 function inputBlur(i){
     if(i.value==""){ i.value=i.defaultValue; i.style.color="#888"; }
 }
+
