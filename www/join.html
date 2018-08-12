@@ -1,0 +1,48 @@
+<head>
+    <title>APCSP Final Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/join.css">
+    <link rel="stylesheet" type="text/css" href="css/buttons.css">
+<!-- Latest compiled and minified CSS -->
+
+<!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1 style="margin-top: 102px;">Join a Meetup!</h1>
+    <hr style="margin-top: 8px;">
+    <h3 style="margin-left: 24px;">Available Meetups</h3>
+    <h5 style="margin-left: 23px; margin-top: 9px;">Listed are the possible start locations; click for more information</h5>
+<!--
+    <ol id="competitions" style="margin-top: -8px;">
+    </ol>
+-->
+    
+    <div class="panel-group" id="competitions" role="tablist" aria-multiselectable="true">
+</div>
+
+    <a href="index.html" id="back" class="button button-action button-rounded" style="width: 140px; margin-top: 42px; margin-left: 24px;">Back</a>
+
+  <!-- = $ 0 -->
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <!-- = $ 0 -->
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDf5y1Je-HRssu5chK4_sq59VqvLA2Edzs",
+            authDomain: "apcsp-final.firebaseapp.com",
+            databaseURL: "https://apcsp-final.firebaseio.com",
+            projectId: "apcsp-final",
+            storageBucket: "apcsp-final.appspot.com",
+            messagingSenderId: "417533094185"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="js/join.js"></script>
+
+
+
+</body>

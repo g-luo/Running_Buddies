@@ -1,0 +1,160 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+    <link rel="stylesheet" type="text/css" href="css/join.css">
+    <link rel="stylesheet" type="text/css" href="css/buttons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>APCSP Final Project</title>
+</head>
+
+<body bgcolor="#1BBC9B">
+    <h1 style="margin-top: 102px;">Upload a Meetup!</h1>
+    <hr style="margin-top: 8px;">
+    <h3 style="margin-left: 24px;">Create your own meetup</h3>
+    <h5 style="margin-left: 23px; margin-top: 9px;">Preset information has been inputted as an Ex; change as needed!</h5>
+
+    <div class="app" style="top: 200px; left: 308px;">
+        <h5 style="width: 144px; margin-left: -270px; margin-top: 67px;">Start Location</h5>
+        <div style="width: 237px; margin-left: -255px; margin-top: 5px;">
+            <form style="width: 235px; margin-left: -9px; margin-top: 4px;">
+                Place
+                <input type="text" name="startplace" value="Ex: Monta Vista Track" div="" align="left" style="color:#888; width: 169px; margin-left: 4px; margin-top: 1px;" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
+            </form>
+            <form style="margin-left: -17px; margin-top: -5px;">
+                Address
+                <input type="text" name="startaddress" value="Ex: 21840 McClellan Rd" div="" align="left" style="color:#888; margin-left: 0px;" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
+            </form>
+            <form style="width: 283px; margin-left: -31px; margin-top: -4px;">
+                City
+                <input type="text" name="startcity" value="Ex: Cupertino" div="" align="left" style="color:#888; margin-left: 0px; margin-top: -1px; width: 184px;" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
+            </form>
+        </div>
+
+        <h5 style="width: 144px; margin-left: -279px; margin-top: 42px;">End Location</h5>
+        <div style="width: 237px; margin-left: -261px; margin-top: -5px;">
+            <form style="width: 235px; margin-left: 2px; margin-top: 12px;">
+                Place
+                <input type="text" name="endplace" value="Ex: Monta Vista Bus Loop" div="" align="left" onfocus="inputFocus(this)" onblur="inputBlur(this)" style="color:#888;"/>
+            </form>
+            <form style="margin-left: -16px;">
+                Address
+                <input type="text" name="endaddress" value="Ex: 21840 McClellan Rd" div="" align="left" style="color:#888;margin-left: 0px;" onfocus="inputFocus(this)" onblur="inputBlur(this)"/>
+            </form>
+            <form style="margin-left: 13px;">
+                City
+                <input type="text" name="endcity" value="Ex: Cupertino" div="" align="left" onfocus="inputFocus(this)" onblur="inputBlur(this)" style="color:#888;" />
+            </form>
+        </div>
+
+        <h5 style="width: 144px; margin-left: -16px; margin-top: -304px;">Details</h5>
+        <div style="margin-left: 135px; width: 242px; margin-top: 34px; height: 117px;">
+            <form style="height: 17px; width: 251px; margin-left: -199px; margin-top: -26px;">
+                Distance
+                <input type="text" name="distance" value="Ex: 5 miles" div="" align="left" style="color:#888; margin-left: 169px; margin-top: -22px; width: 184px;" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
+            </form>
+            <label for="dropdown2" style="height: 106px; margin-left: -195px; margin-top: 3px;">Type</label>
+            <select id="dropdown2" name="dropdown2" style="height: 18px; margin-left: 2px; margin-top: -108px; width: 214px;">
+                <option value="easy">easy</option>
+                <option value="longM">long</option>
+                <option value="tempo">tempo</option>
+                <option value="workout">workout</option>
+            </select>
+
+            <form style="margin-left: -89px; margin-top: -20px;">
+                <div style="width: 178px; margin-left: -54px; margin-top: -33px;">
+                    <label for="dropdown3" style="height: 45px; width: 200px; margin-left: -18px; margin-top: -41px;">Start time</label>
+                    <select id="dropdown3" name="dropdown3" style="margin-top: -49px; margin-left: 131px; width: 163px;">
+                        <option value="12:00 AM">12:00 AM</option>
+                        <option value="12:30 AM">12:30 AM</option>
+                        <option value="1:00 AM">1:00 AM</option>
+                        <option value="1:30 AM">1:30 AM</option>
+                        <option value="2:00 AM">2:00 AM</option>
+                        <option value="2:30 AM">2:30 AM</option>
+                        <option value="3:00 AM">3:00 AM</option>
+                        <option value="3:30 AM">3:30 AM</option>
+                        <option value="4:00 AM">4:00 AM</option>
+                        <option value="4:30 AM">4:30 AM</option>
+                        <option value="5:00 AM">5:00 AM</option>
+                        <option value="5:30 AM">5:30 AM</option>
+                        <option value="6:00 AM">6:00 AM</option>
+                        <option value="6:30 AM">6:30 AM</option>
+                        <option value="7:00 AM">7:00 AM</option>
+                        <option value="7:30 AM">7:30 AM</option>
+                        <option value="8:00 AM">8:00 AM</option>
+                        <option value="8:30 AM">8:30 AM</option>
+                        <option value="9:00 AM">9:00 AM</option>
+                        <option value="9:30 AM">9:30 AM</option>
+                        <option value="10:00 AM">10:00 AM</option>
+                        <option value="10:30 AM">10:30 AM</option>
+                        <option value="11:00 AM">11:00 AM</option>
+                        <option value="11:30 AM">11:30 AM</option>
+                        <option value="12:00 PM">12:00 PM</option>
+                        <option value="12:30 PM">12:30 PM</option>
+                        <option value="1:00 PM">1:00 PM</option>
+                        <option value="1:30 PM">1:30 PM</option>
+                        <option value="2:00 PM">2:00 PM</option>
+                        <option value="2:30 PM">2:30 PM</option>
+                        <option value="3:00 PM">3:00 PM</option>
+                        <option value="3:30 PM">3:30 PM</option>
+                        <option value="4:00 PM">4:00 PM</option>
+                        <option value="4:30 PM">4:30 PM</option>
+                        <option value="5:00 PM">5:00 PM</option>
+                        <option value="5:30 PM">5:30 PM</option>
+                        <option value="6:00 PM">6:00 PM</option>
+                        <option value="6:30 PM">6:30 PM</option>
+                        <option value="7:00 PM">7:00 PM</option>
+                        <option value="7:30 PM">7:30 PM</option>
+                        <option value="8:00 PM">8:00 PM</option>
+                        <option value="8:30 PM">8:30 PM</option>
+                        <option value="9:00 PM">9:00 PM</option>
+                        <option value="9:30 PM">9:30 PM</option>
+                        <option value="10:00 PM">10:00 PM</option>
+                        <option value="10:30 PM">10:30 PM</option>
+                        <option value="11:00 PM">11:00 PM</option>
+                        <option value="11:30 PM">11:30 PM</option>
+
+                    </select>
+
+                </div>
+            </form>
+
+            <form style="width: 327px; margin-left: -141px; margin-top: -34px;">
+                Your Name
+                <input type="text" name="name" value="Ex: Grace Luo" div="" align="left" style="color:#888; width: 167px;" onfocus="inputFocus(this)" onblur="inputBlur(this)" />
+            </form>
+
+            <a href="newevent.html" id="newevent" class="button button-action button-rounded" style="width: 141px; margin-left: -204px; margin-top: 86px;">Upload!</a>
+            <a href="index.html" id="upload" class="button button-action button-rounded" style="width: 140px; margin-left: 4px; margin-top: 51px;">Back</a>
+
+        </div>
+    </div>
+    <!-- = $ 0 -->
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <!-- = $ 0 -->
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDf5y1Je-HRssu5chK4_sq59VqvLA2Edzs",
+            authDomain: "apcsp-final.firebaseapp.com",
+            databaseURL: "https://apcsp-final.firebaseio.com",
+            projectId: "apcsp-final",
+            storageBucket: "apcsp-final.appspot.com",
+            messagingSenderId: "417533094185"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/upload.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+
+
+
+
+</body>
