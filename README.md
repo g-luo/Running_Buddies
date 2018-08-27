@@ -8,7 +8,7 @@ A web app to connect community runners. Runners can either organize an event by 
 
 ## Motivation
 
-Runners often perform better through the companionship and encouragement of fellow runners. As an avid runner myself, I found solo running to be lonely and monotonous. However, it can be difficult to organize running events on today's social media networks:
+Runners often perform better with the companionship and encouragement of fellow runners. As an avid runner myself, I found solo running to be lonely and monotonous. However, it can be difficult to organize running events on today's social media networks:
 
 1) individuals often lose motivation to run if there is a long gap between the posting of the event and the event itself
 2) events may not reach their intended audience (runners)
